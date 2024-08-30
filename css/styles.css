@@ -63,20 +63,27 @@ section h2 {
     margin-top: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Grid Container Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
 }
 
-ul li {
-    margin-bottom: 10px;
-}
-
-ul li a {
-    color: #007bff;
+.grid-item {
+    height: 100px;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
     text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transition */
 }
 
-ul li a:hover {
-    text-decoration: underline;
+.grid-item:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px); /* Moves the box up slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
 }
