@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    cursor: url('images/mechanical_cursor.png'), auto;
+    cursor: url('images/websiteCursor1INPROGRESS2.png') 16 16, auto;
 }
 
 .container {
@@ -98,8 +98,4 @@ section h2 {
     background-color: #0056b3;
     transform: translateY(-5px); /* Moves the box up slightly */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
-}
-
-body {
-    cursor: url("images/websiteCursor1INPROGRESS2/png"), auto;
 }
