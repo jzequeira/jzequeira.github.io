@@ -13,7 +13,7 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
-    width: 250px;
+    width: 20%;
     background-color: #333;
     color: white;
     padding-top: 20px;
@@ -45,6 +45,7 @@ body {
     padding: 20px;
     background-color: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    cursor: url('images/websiteCursor1INPROGRESS2.png'), auto;
 }
 
 header {
@@ -72,7 +73,7 @@ section h2 {
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
-    cursor: url('images/websiteCursor1INPROGRESS2.png'), auto;
+    cursor: url('images/websiteCursor1INPROGRESS2.png') 2 2, auto;
 }
 
 /* Grid Container Styles */
@@ -96,7 +97,31 @@ section h2 {
 
 .grid-item:hover {
     background-color: #0056b3;
-    transform: translateY(-5px); /* Moves the box up slightly */
+    transform: scale(1.05); /* Enlarges the box slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+.wide-banner-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    gap: 35px;
+}
+
+.wide-banner-item {
+    height: 80%;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transition */
+}
+
+.wide-banner-item:hover {
+    background-color: #0056b3;
+    transform: scale(1.02); /* Enlarges the box slightly on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
 }
 
