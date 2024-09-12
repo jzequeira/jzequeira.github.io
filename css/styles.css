@@ -45,7 +45,7 @@ body {
     padding: 20px;
     background-color: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    cursor: url('images/websiteCursor1INPROGRESS2.png'), auto;
+    cursor: url('../images/websiteCursor1INPROGRESS23.png'), auto;
 }
 
 header {
@@ -74,7 +74,7 @@ section h2 {
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
-    cursor: url('images/websiteCursor1INPROGRESS2.png') 2 2, auto;
+    cursor: url('../images/websiteCursor1INPROGRESS23.png') 2 2, auto;
     display: inline-block; /* Ensures the box size adapts to content */
     width: 100%; /* If you want the box to take full width */
     box-sizing: border-box; /* Ensures padding is included in the width/height calculations */
@@ -131,5 +131,5 @@ section h2 {
 }
 
 body {
-    cursor: url('images/websiteCursor1INPROGRESS2.png'), auto;
+    cursor: url('../images/websiteCursor1INPROGRESS23.png'), auto;
 }
