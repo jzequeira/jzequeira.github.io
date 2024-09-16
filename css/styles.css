@@ -6,6 +6,10 @@ body {
     background-color: #f4f4f4;
 }
 
+a:hover {
+    cursor: url('../images/websiteHandCursor1INPROGRESS23.png'), auto;
+}
+
 .container {
     display: flex;
     min-height: 100vh;
@@ -37,7 +41,6 @@ body {
 
 .sidebar ul li a:hover {
     background-color: #575757;
-    cursor: url('../images/websiteHandCursor1INPROGRESS23.png'), auto;
 }
 
 /* Content Area Styles */
@@ -105,7 +108,6 @@ section h2 {
     background-color: #0056b3;
     transform: scale(1.05); /* Enlarges the box slightly on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
-    cursor: url('../images/websiteHandCursor1INPROGRESS23.png'), auto;
 }
 
 .wide-banner-container {
@@ -130,9 +132,12 @@ section h2 {
     background-color: #0056b3;
     transform: scale(1.02); /* Enlarges the box slightly on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
-    cursor: url('../images/websiteHandCursor1INPROGRESS23.png'), auto;
 }
 
 body {
     cursor: url('../images/websiteCursor1INPROGRESS23.png'), auto;
+}
+
+a:hover {
+    cursor: url('../images/websiteHandCursor1INPROGRESS23.png'), auto;
 }
