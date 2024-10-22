@@ -1,33 +1,41 @@
 /* General Styles */
 body {
-    /* init */
-    /* font-family: Arial, sans-serif; */
-    /* background-color: #f4f4f4; */
+    /* 1 init */
+    /* font-family: Arial, sans-serif;
+    background-color: #f4f4f4;  */
     margin: 0;
     padding: 0;
     /* not bad */
-    /* 
-    background-color: #121212;
+    /* 2 */
+    /* background-color: #121212;
     color: #ffffff;
     font-family: 'Source Code Pro', monospace; */
-    /* 
-    background-color: #f0f4f8;
+    /* 3 */
+    /* background-color: #f0f4f8;
     color: #333;
     font-family: 'Open Sans', sans-serif; */
-    /* 
-    background-color: #262626;
+    /* 4 */
+    /* background-color: #262626;
     color: #f5f5f5;
     font-family: 'Montserrat', sans-serif; */
     /* needs fixing concept is good */
-    /* 
-    background-color: #e1e1e1;
+    /* 5 */
+    /* background-color: #e1e1e1;
     color: #0d47a1;
     font-family: 'Nunito', sans-serif; */
     /* not bad */
-    
-    background-color: #263238;
+    /* 6 */
+    /* background-color: #263238;
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+    /* 7 ROR2 */
+    background-color: #0e0e1e;
+    color: #dcdcdc;
+    font-family: 'Roboto', sans-serif;
+    /* Optional background image */
+    /* background-image: url('images/space_background.jpg');
+    background-size: cover;
+    background-attachment: fixed; */
 }
 
 a:hover {
@@ -42,23 +50,28 @@ a:hover {
 /* Sidebar Styles */
 .sidebar {
     width: 20%;
-    /* init */
-    /* background-color: #333; */
     padding-top: 20px;
-    /* 
-    background-color: #1b5e20;
+    /* 1 init */
+    /* background-color: #333; */
+    /* 2 */
+    /* background-color: #1b5e20;
     color: white; */
-    /* 
-    background-color: #1565c0;
+    /* 3 */
+    /* background-color: #1565c0;
     color: #ffffff; */
-    /* 
-    background-color: #6d6d6d;
+    /* 4 */
+    /* background-color: #6d6d6d;
     color: #f5f5f5; */
-    /* 
-    background-color: #0d47a1;
+    /* 5 */
+    /* background-color: #0d47a1;
     color: #ffffff; */
-    background-color: #263238;
-    color: #26c6da;
+    /* 6 */
+    /* background-color: #263238;
+    color: #26c6da; */
+    /* 7 ROR2 */
+    background-color: #1b1b38;
+    color: #dcdcdc;
+    border-right: 2px solid #5dade2;
 }
 
 .sidebar ul {
@@ -72,45 +85,57 @@ a:hover {
 }
 
 .sidebar ul li a {
-    color: white;
+    /* color: white; */
+    color: #5dade2;
     text-decoration: none;
     display: block;
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
 .sidebar ul li a:hover {
     background-color: #575757;
+    color: #39ff14;
+    text-shadow: 0 0 5px #39ff14;
 }
 
 /* Content Area Styles */
 .content {
     flex: 1;
     padding: 20px;
-    /* init */
-    /* background-color: white; */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    /* 1 init */
+    /* background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); */
     cursor: url('../resources/websiteCursor1INPROGRESS3SMALLROR21.png'), auto;
-    /* 
-    background-color: #1c1c1c;
+    /* 2 */
+    /* background-color: #1c1c1c;
     color: #00d1b2; */
-    /*
-    background-color: #ffffff;
+    /* 3 */
+    /* background-color: #ffffff;
     color: #333; */
-    /* 
-    background-color: #333;
+    /* 4 */
+    /* background-color: #333;
     color: #f5f5f5; */
-    /* 
-    background-color: #ffffff;
+    /* 5 */
+    /* background-color: #ffffff;
     color: #0d47a1; */
-    background-color: #37474f;
-    color: #ffffff;
-
+    /* 6 */
+    /* background-color: #37474f;
+    color: #ffffff; */
+    /* 7 ROR2 */
+    background-color: #1b1b38;
+    color: #dcdcdc;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.7);
 }
 
 header {
-    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
+    /* background-color: #333; */
+    /* 7 ROR2 */
+    background-color: #2e2e44;
+    color: #ffffff;
+    border-bottom: 2px solid #5dade2;
 }
 
 header h1 {
@@ -203,38 +228,76 @@ a:hover {
 }
 
 .textbox, .grid-item, .wide-banner-item {
-    /* 
-    background-color: #2e2e2e;
+    /* 2 */
+    /* background-color: #2e2e2e;
     color: #ffca28; */
-    /* 
-    background-color: #b0bec5;
+    /* 3 */
+    /* background-color: #b0bec5;
     color: #333;
     border: 2px solid #1565c0; */
-    /* 
-    background-color: #333;
+    /* 4 */
+    /* background-color: #333;
     color: #f5f5f5; */
-    /* 
-    background-color: #64b5f6;
+    /* 5 */
+    /* background-color: #64b5f6;
     color: #0d47a1;
     border: 2px dashed #0d47a1; */
-    background-color: #26c6da;
+    /* 6 */
+    /* background-color: #26c6da;
     color: #ffffff;
-    border: 1px solid #ffca28;
+    border: 1px solid #ffca28; */
+    /* 7 ROR2 */
+    background-color: #2e2e44;
+    color: #dcdcdc;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #5dade2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
 .textbox:hover, .grid-item:hover, .wide-banner-item:hover {
-    /* 
-    background-color: #37474f;
+    /* 2 */
+    /* background-color: #37474f;
     box-shadow: 0 4px 8px rgba(255, 202, 40, 0.2); */
-    /* 
-    background-color: #ef6c00;
+    /* 3 */
+    /* background-color: #ef6c00;
     box-shadow: 0 4px 8px rgba(255, 108, 0, 0.2); */
-    /* 
-    background-color: #d32f2f;
+    /* 4 */
+    /* background-color: #d32f2f;
     box-shadow: 0 4px 8px rgba(243, 203, 72, 0.4); */
-    /* 
-    background-color: #ff6f00;
+    /* 5 */
+    /* background-color: #ff6f00;
     box-shadow: 0 4px 8px rgba(255, 111, 0, 0.3); */
-    background-color: #80cbc4;
-    box-shadow: 0 4px 8px rgba(128, 203, 196, 0.3);
+    /* 6 */
+    /* background-color: #80cbc4;
+    box-shadow: 0 4px 8px rgba(128, 203, 196, 0.3); */
+    /* 7 ROR2 */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #5dade2;
+    border-color: #8a2be2;
+}
+
+/* Button Styles */
+button {
+    background-color: #5dade2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #8a2be2;
+    box-shadow: 0 0 10px #8a2be2;
+}
+
+/* Neon Text Effect */
+.neon-text {
+    color: #39ff14;
+    text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
 }
