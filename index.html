@@ -25,7 +25,7 @@
             <section>
                 <h2>Minor Projects</h2>
                 <div class="grid-container">
-                    <a href="404.html" class="grid-item" data-image="images/CADSoftware.png">Web Design</a>
+                    <a href="404.html" class="grid-item" background-image="images/CADSoftware.png">Web Design</a>
                     <a href="404.html" class="grid-item">Computer Aided Design</a>
                     <a href="404.html" class="grid-item">Computer Controlled Cutting</a>
                     <a href="404.html" class="grid-item">Electronics Design</a>
@@ -60,7 +60,7 @@
 </body>
 <script>
     document.querySelectorAll('.grid-item').forEach(item => {
-        const imageUrl = item.getAttribute('data-image');
+        const imageUrl = item.getAttribute('background-image');
         if (imageUrl) {
             item.style.backgroundImage = `url(${imageUrl})`;
         }

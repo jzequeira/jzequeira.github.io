@@ -148,7 +148,7 @@ section h2 {
 }
 
 .textbox {
-    background-color: #007bff;
+    /* background-color: #007bff; DELETE LATER */
     color: white; /* text color */
     padding: 20px;
     margin-top: 15px;
@@ -177,7 +177,7 @@ section h2 {
 
 .grid-item {
     height: 100px;
-    /* redundant? */
+    /* DELETE LATER */
     /* background-color: #007bff; */
     color: white;
     padding: 20px;
@@ -185,7 +185,7 @@ section h2 {
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transition */
+    transition: transform 0.3s, box-shadow 0.3s; 
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -197,16 +197,17 @@ section h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 255, 0.0); /* No tint initially */
-    transition: background-color 0.3s ease; /* Smooth transition for the tint */
-    pointer-events: none; /* Ensures the overlay doesn't interfere with content interaction */
+    background-color: rgba(0, 0, 255, 0.0); /*maybe makes entire background color that and then changes specifically the grid item opacity down after?*/
+    /* keep the fading into the background as is, add text later that would be more legible with it, would not hurt to learn how to slight tint at start but not priority */
+    transition: background-color 0.3s ease; 
+    pointer-events: none; 
     border-radius: 8px;
 }
 
 .grid-item:hover::before {
-    background-color: rgba(0, 86, 179, 0.5);
-    transform: scale(1.05); /* Enlarges the box slightly on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+    background-color: rgba(0, 86, 179, 0.3); /* change to 0.3 when bug is fixed */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .wide-banner-container {
@@ -215,7 +216,7 @@ section h2 {
     gap: 35px;
 }
 
-.wide-banner-item {
+/* .wide-banner-item {
     height: 80%;
     background-color: #007bff;
     color: white;
@@ -224,14 +225,14 @@ section h2 {
     border-radius: 5px;
     text-decoration: none;
     font-size: 16px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transition */
-}
+    transition: transform 0.3s, box-shadow 0.3s; 
+} */
 
-.wide-banner-item:hover {
+/* .wide-banner-item:hover {
     background-color: #0056b3;
-    transform: scale(1.02); /* Enlarges the box slightly on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
-}
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+} */
 
 /* delete redundant cursor implementations above */
 
@@ -263,7 +264,7 @@ a:hover {
     color: #ffffff;
     border: 1px solid #ffca28; */
     /* 7 ROR2 */
-    background-color: #2e2e44;
+    /* background-color: #2e2e44; */
     color: #dcdcdc;
     margin: 15px 0;
     text-align: center;
@@ -273,7 +274,47 @@ a:hover {
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
-.textbox:hover, .grid-item:hover, .wide-banner-item:hover {
+.grid-item, .wide-banner-item {
+    height: 100px;
+    /* DELETE LATER */
+    /* background-color: #007bff; */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.grid-item:hover, .wide-banner-item:hover {
+    /* FIND OUT old code? idk */
+    /* background-color: #0056b3; */
+    transform: scale(1.02); 
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
+    box-shadow: 0 0 20px #5dade2;
+    border-color: #8a2be2;
+}
+
+.grid-item::before, .wide-banner-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.0); /*maybe makes entire background color that and then changes specifically the grid item opacity down after?*/
+    /* keep the fading into the background as is, add text later that would be more legible with it, would not hurt to learn how to slight tint at start but not priority */
+    transition: background-color 0.3s ease; 
+    pointer-events: none; 
+    border-radius: 8px;
+}
+
+.grid-item:hover::before, .wide-banner-item:hover::before {
     /* 2 */
     /* background-color: #37474f;
     box-shadow: 0 4px 8px rgba(255, 202, 40, 0.2); */
@@ -290,9 +331,12 @@ a:hover {
     /* background-color: #80cbc4;
     box-shadow: 0 4px 8px rgba(128, 203, 196, 0.3); */
     /* 7 ROR2 */
-    transform: scale(1.05);
+    /* transform: scale(1.05);
     box-shadow: 0 0 20px #5dade2;
-    border-color: #8a2be2;
+    border-color: #8a2be2; */
+    background-color: rgba(0, 86, 179, 0.3); /* change to 0.3 when bug is fixed */
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Button Styles */
