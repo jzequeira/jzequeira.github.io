@@ -142,8 +142,11 @@ header h1 {
     margin: 0;
 }
 
-section h2 {
-    color: #333;
+h2 {
+    margin: 0;
+}
+
+h3 {
     margin-top: 0;
 }
 
@@ -272,10 +275,12 @@ a:hover {
     border: 2px solid #5dade2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    /* MAYBE NEED TO ADD BACKGROUND COLOR INHERIT HERE TO FIX SHADING WHEN NOT CLICKED, before maybe overrides main background becsause none is set up here? */
 }
 
 .grid-item, .wide-banner-item {
-    height: 100px;
+    position: relative;
+    height: 100px; /* fix spacing for wide banner items, maybe make this the only innate grid item css change? */
     /* DELETE LATER */
     /* background-color: #007bff; */
     color: white;
@@ -288,6 +293,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    z-index: 0;
 }
 
 
@@ -309,9 +315,11 @@ a:hover {
     height: 100%;
     background-color: rgba(0, 0, 255, 0.0); /*maybe makes entire background color that and then changes specifically the grid item opacity down after?*/
     /* keep the fading into the background as is, add text later that would be more legible with it, would not hurt to learn how to slight tint at start but not priority */
+    /* CHANGE TO MAKE BANNERS FADED IMG BEFORE AND THEN REVEAL TEXT, SEPARATE FROM GRID ITEMS TO DO THAT */
     transition: background-color 0.3s ease; 
     pointer-events: none; 
     border-radius: 8px;
+    z-index: -1;
 }
 
 .grid-item:hover::before, .wide-banner-item:hover::before {
