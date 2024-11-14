@@ -150,6 +150,18 @@ h3 {
     margin-top: 0;
 }
 
+.subheader {
+    color: white;
+    padding: 5px;
+    /* background-color: #333; */
+    /* 7 ROR2 */
+    background-color: #2e2e44;
+    color: #ffffff;
+    border-bottom: 2px solid #5dade2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .textbox {
     /* background-color: #007bff; DELETE LATER */
     color: white; /* text color */
