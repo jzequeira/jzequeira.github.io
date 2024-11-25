@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="image">
+                <img src="images/VinylCutSVGWeb.svg" style="width: 40%;">
+            </div>
+            <ul>
+                <li><h3><a href="index.html">Home</a></h3></li>
+                <li><h3><a href="about_me.html">About Me</a></h3></li>
+                <li><h3><a href="final_project.html">Final Project</a></li>
+                <!-- <li><h3><a href="college_apps.html">College Applications Site</a></h3></li> -->
+            </ul>
+        </nav>
+
+        <div class="content">
+            <header>
+                <h1>Final Project</h1>
+            </header>
+            <section>
+                <h2 class="subheader">First Circuit</h2>
+                <div class="textbox">
+                    <h3>The aim of this project was to familiarize ourselves with the theory, design software, and production of circuits. We used KiCad on our school 
+                        computers to create the PCB's as a free alternative to other industry standard circuit designers. </h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/KiCad-Logo.svg.png" class="small-image">
+                    </div>
+                    <h3>After the download finished, I opened KiCad and began to familiarize myself with the software. While I liked the compartmentalization in its opening 
+                        a new window for each part, it ended up being pretty cluttered by the end. For the first half of this project, we were tasked with creating a simple 
+                        circuit that would power an LED with a battery.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/FirstCircuitLED.png" class="small-image">
+                    </div>
+                    <h3>I started off by creating a new project and placing a resistor, battery cell, and LED in the schematic editor, and connected the three of them in the 
+                        right orientation with wire.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/FirstCircuitSchematic.png" class="small-image">
+                    </div>
+                    <h3>I then looked up which parts we would be using for our future circuits and assigned them to the part footprints in the footprint editor. This took a 
+                        while due to the amount of footprints we had to go through to find the right one, so I wrote them down in case for future projects.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/FirstCircuitFootprints.png" class="small-image">
+                    </div>
+                    <h3>Finally, I put the circuit together in the PCB editor, connecting wire between the three parts and orienting them as desired. This part was where I 
+                        struggled most in terms of navigating menus, showing in the 5 minutes it took me to find out how to add wiring. However, in the end, I had a completed 
+                        circuit, having gained expereince with circuit design software UI for later use.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/FirstCircuitPCB.png" class="small-image">
+                    </div>
+                </div>
+                <h2 class="subheader">Second Circuit</h2>
+                <div class="textbox">
+                    <h3>After finishing the functional LED circuit, we were assigned a group circuit with at least two LED's with their own buttons. Since it was the first 
+                        time any of us used buttons in making electronics, we were taught how they worked before starting. We created a new project and got to work on a new 
+                        schematic, attaching two buttons before their respective resistor and LED.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/SecondCircuitSchematic.png" class="small-image">
+                    </div>
+                    <h3>Like before, we assigned footprints from the parts we had, now accounting for the new buttons.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/SecondCircuitFootptints.png" class="small-image">
+                    </div>
+                    <h3>We arranged the two lights to surround the power source this time, making sure to leave space on the outside of the circuit to avoid cutting the 
+                        circuit.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/SecondCircuitPCB.png" class="small-image">
+                    </div>
+                    <h3>This time, I found a new utility for KiCad, a 3D PCB viewer after configuring the circuit in the PCB editor, which helped us see the final product.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/SecondCircuit3DPCB.png" class="small-image">
+                    </div>
+                    <h3>Unfortunately, the 3D view was not enough to stop our impatience, and when we finally cut our circuit, we saw that the bottom side of the button lined 
+                        up with the other half of the wire, allowing current to pass through it without the button being pressed. There was also a much less controllable issue 
+                        with the school CNC machine, since it cut the circuit much more than it should be at its borders, rendering this version unusable.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/SecondCircuitCutMistake.jpg" class="small-image">
+                    </div>
+                    <h3>We later fixed the issue with the button on the bottom by pushing the button up and replacing the wire in KiCad, having a functional final circuit for 
+                        whenever we would need it.</h3>
+                    <div class="image">
+                        <img src="images/circuitdesign/SecondCircuitCutNoMistake.png" class="small-image">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -184,6 +184,16 @@ h3 {
     text-align: center;
     display: inline-block; /* Ensures the box size adapts to content */
     width: 100%; /* If you want the box to take full width */
+    max-height: 200px;
+    /* FIX THIS, NOT WORKING TO FIX PROBLEM OF IMGS BEING TOO TALL LIKE IN CAD*/
+    
+}
+
+.small-image{
+    width: 45%;
+    margin-top: auto;
+    margin-bottom: 30px;
+
 }
 
 .link {
