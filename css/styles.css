@@ -178,22 +178,27 @@ h3 {
     width: 100%; /* If you want the box to take full width */
     box-sizing: border-box; /* Ensures padding is included in the width/height calculations */
     word-wrap: break-word; /* Ensures long words don't break the layout */
+    /* textbox seems to be causing shift in size of sidebar in pages where they are used, maybe smth to do with it being 100% width and 2px border? */
 }
 
 .image {
     text-align: center;
     display: inline-block; /* Ensures the box size adapts to content */
     width: 100%; /* If you want the box to take full width */
-    max-height: 200px;
+    /* max-height: 200px; */
+    
     /* FIX THIS, NOT WORKING TO FIX PROBLEM OF IMGS BEING TOO TALL LIKE IN CAD*/
     
 }
 
 .small-image{
-    width: 45%;
+    max-width: 45%;
+    max-height: 400px;
     margin-top: auto;
     margin-bottom: 30px;
-
+    border-radius: 2px;
+    border-color: #5dade2;
+    border-width: 1px;
 }
 
 .link {
