@@ -26,6 +26,14 @@
             </header>
 
             <section>
+                <h2 class="subheader">Directory</h2>
+                <div class="wide-banner-container">
+                    <a href="college_apps.html" class="wide-banner-item" background-image="images/wpi/background.png" style="height: 20px;">Directory</a>
+                </div>
+                <h2 class="subheader">Major Class Project</h2>
+                <div class="wide-banner-container">
+                    <a href="final_project.html" class="wide-banner-item" background-image="images/PlantGrowthInSpace.png">Growing Beyond Earth</a>
+                </div>
                 <h2 class="subheader">Minor Projects</h2>
                 <div class="grid-container">
                     <a href="404.html" class="grid-item" background-image="images/css-work/CSSDesign1Init.png">Web Design</a>
@@ -69,6 +77,12 @@
         }
         else {
             item.style.backgroundImage = `url(images/CADSoftware.png)`;
+        }
+    });
+    document.querySelectorAll('.wide-banner-item').forEach(item => {
+        const imageUrl = item.getAttribute('background-image');
+        if (imageUrl) {
+            item.style.backgroundImage = `url(${imageUrl})`;
         }
     });
 </script>

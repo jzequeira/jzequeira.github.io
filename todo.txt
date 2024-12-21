@@ -1,0 +1,3 @@
+<import rest of todo from rest of website todos to here>
+^maybe not safe bc on git? make new?
+add in make wide banner items slide in and grid items drop in? or both slide in?
